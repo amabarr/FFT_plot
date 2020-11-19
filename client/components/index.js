@@ -4,3 +4,7 @@
  * having to figure out which file they belong to!
  */
 export {default as Navbar} from './navbar'
+export {default as Fft} from './fft'
+export {default as AudioChecker} from './audio'
+export {default as AudioAnalyzer} from './AudioAnalyzer'
+export {default as AudioVisualizer} from './AudioVisualiser'
