@@ -19,3 +19,34 @@ form div {
   margin: 1em;
   display: inline-block;
 }
+
+#graphic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/backgroundFFT.jpg);
+  width: 1000px;
+  height: 525px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+#oscBack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 950px;
+  height: 500px;
+  background-image: url(/oscilloscope.png);
+}
+
+.charts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
