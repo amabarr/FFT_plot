@@ -15,9 +15,9 @@ nav a {
   margin: 1em;
 }
 
-form div {
-  margin: 1em;
-  display: inline-block;
+div {
+  margin: 0;
+  padding: 0;
 }
 
 #graphic {
@@ -27,12 +27,7 @@ form div {
   background-image: url(/backgroundFFT.jpg);
   width: 1000px;
   height: 525px;
-}
-
-.controls {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
+  margin: 0px;
 }
 
 #oscBack {
@@ -42,11 +37,9 @@ form div {
   width: 950px;
   height: 500px;
   background-image: url(/oscilloscope.png);
+  margin-right: 0px;
 }
 
-.charts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+#three {
+  background-color: black;
 }

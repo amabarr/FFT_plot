@@ -4,9 +4,6 @@ import './graphicEQ.css'
 class GraphicEQ extends Component {
   constructor(props) {
     super(props)
-    // this.state = {
-    //   context: ''
-    // }
     this.canvas = React.createRef()
   }
 

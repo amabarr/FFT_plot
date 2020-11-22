@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import AudioAnalyzer from './AudioAnalyzer'
-
+import './audio.css'
 //react component that asks for audio input
 //will put buttons here to change SR + others things later
 class AudioChecker extends Component {
@@ -8,7 +8,7 @@ class AudioChecker extends Component {
     super(props)
     this.state = {
       audio: null,
-      chartType: 'Oscilloscope'
+      chartType: 'AudioAnimation'
     }
     this.handleMicrophone = this.handleMicrophone.bind(this)
     this.handleChartChange = this.handleChartChange.bind(this)
@@ -62,16 +62,27 @@ class AudioChecker extends Component {
           >
             FFT Plot
           </button>
+          <button
+            type="button"
+            onClick={this.handleChartChange}
+            value="AudioAnimation"
+          >
+            Animation <small>*WARNING: FLASHING LIGHTS*</small>
+          </button>
         </div>
 
-        {this.state.audio ? (
-          <AudioAnalyzer
-            audio={this.state.audio}
-            chartType={this.state.chartType}
-          />
-        ) : (
-          'Start your microphone in order to use our sound analyzers!'
-        )}
+        <div className="analyzers">
+          {this.state.audio ? (
+            <AudioAnalyzer
+              audio={this.state.audio}
+              chartType={this.state.chartType}
+            />
+          ) : (
+            <div className="message">
+              Start your microphone or upload music in order to start!
+            </div>
+          )}
+        </div>
       </div>
     )
   }

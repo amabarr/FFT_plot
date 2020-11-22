@@ -1,8 +1,9 @@
 import React, {Component} from 'react'
 import Oscilloscope from './Oscilloscope'
 import GraphicEQ from './graphicEQ'
+import AudioAnimation from './AudioAnimation'
 import Spectrogram from './Spectrogram'
-import {Switch} from 'react-router-dom'
+import './AudioAnalyzer.css'
 
 class AudioAnalyzer extends Component {
   constructor(props) {
@@ -71,7 +72,7 @@ class AudioAnalyzer extends Component {
 
   render() {
     return (
-      <div>
+      <div className="analyzers">
         {/* <Spectrogram audioData = {this.state.audioData} bufferLength = {this.state.bufferLength} /> */}
         {this.props.chartType === 'Oscilloscope' ? (
           <Oscilloscope
@@ -79,10 +80,25 @@ class AudioAnalyzer extends Component {
             bufferLength={this.state.bufferLength}
           />
         ) : (
+          ''
+        )}
+        {this.props.chartType === 'FFT Plot' ? (
           <GraphicEQ
             audioData={this.state.audioData}
             bufferLength={this.state.bufferLength}
           />
+        ) : (
+          ''
+        )}
+
+        {this.props.chartType === 'AudioAnimation' ? (
+          <AudioAnimation
+            audioData={this.state.audioData}
+            timeData={this.state.timeData}
+            bufferLength={this.state.bufferLength}
+          />
+        ) : (
+          ''
         )}
       </div>
     )

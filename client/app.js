@@ -1,11 +1,12 @@
 import React from 'react'
-import {AudioChecker, Navbar} from './components'
+import {AudioAnimation, AudioChecker, Footer, Header} from './components'
 
 const App = () => {
   return (
     <div>
-      <Navbar />
+      <Header />
       <AudioChecker />
+      <Footer />
     </div>
   )
 }

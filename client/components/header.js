@@ -1,9 +1,9 @@
 import React from 'react'
-// import {connect} from 'react-redux'
+import './header.css'
 
 const Navbar = () => (
   <div>
-    <h1>FFT PLOT</h1>
+    <h1>Synesthesia</h1>
     <hr />
   </div>
 )
