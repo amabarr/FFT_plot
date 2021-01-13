@@ -2,9 +2,9 @@ import React from 'react'
 import './header.css'
 
 const Navbar = () => (
-  <div>
+  <div className="bars">
     <h1>Synesthesia</h1>
-    <hr />
+    <p> press play to start!</p>
   </div>
 )
 

@@ -24,7 +24,7 @@ class AudioAnimation extends Component {
 
     return (
       <div id="three">
-        <Canvas style={{height: 600, width: 945}}>
+        <Canvas style={{height: 600, width: 945}} id="animation">
           <ambientLight intensity={0.5} />
           <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
           <pointLight position={[-10, -10, -10]} />

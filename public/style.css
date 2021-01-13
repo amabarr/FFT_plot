@@ -1,5 +1,7 @@
 body {
   font-family: sans-serif;
+  background-color: black;
+  color: #d08fdd;
 }
 
 a {
@@ -19,27 +21,26 @@ div {
   margin: 0;
   padding: 0;
 }
-
 #graphic {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/backgroundFFT.jpg);
+  /* background-image: url(/backgroundFFT.jpg); */
   width: 1000px;
   height: 525px;
   margin: 0px;
 }
 
-#oscBack {
+#three {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 950px;
-  height: 500px;
-  background-image: url(/oscilloscope.png);
-  margin-right: 0px;
+  background-color: black;
+  height: 100%;
+  width: 100%;
 }
 
-#three {
-  background-color: black;
+.animation {
+  display: flex;
+  flex: 1 5;
+  height: 100%;
+  width: 100%;
 }

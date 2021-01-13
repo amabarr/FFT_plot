@@ -46,7 +46,11 @@ class AudioChecker extends Component {
       <div className="charts">
         <div className="controls">
           <button type="button" onClick={this.handleMicrophone}>
-            {this.state.audio ? 'Stop Microphone' : 'Get Microphone Input'}
+            {this.state.audio ? (
+              'Stop Microphone'
+            ) : (
+              <i className="fa fa-play" />
+            )}
           </button>
           <button
             type="button"
