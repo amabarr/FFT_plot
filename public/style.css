@@ -1,5 +1,8 @@
 body {
-  font-family: sans-serif;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(24, 23, 23);
+  color: #d1dfe6;
 }
 
 a {
@@ -10,12 +13,42 @@ label {
   display: block;
 }
 
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 nav a {
   display: inline-block;
   margin: 1em;
 }
 
-form div {
-  margin: 1em;
-  display: inline-block;
+div {
+  margin: 0;
+  padding: 0;
+}
+#graphic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url(/backgroundFFT.jpg); */
+  width: 1000px;
+  height: 525px;
+  margin: 0px;
+}
+
+#three {
+  display: flex;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.animation {
+  display: flex;
+  flex: 1 5;
+  height: 100%;
+  width: 100%;
 }

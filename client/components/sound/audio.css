@@ -1,0 +1,30 @@
+.charts {
+  display: flex;
+  flex-direction: column;
+  flex: 1 5 auto;
+  height: 100%;
+  width: 100%;
+  align-content: center;
+}
+
+button {
+  width: 25%;
+  height: 100%;
+}
+
+.controls {
+  height: 100%;
+  width: 100%;
+  min-width: 200px;
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.message {
+  display: flex;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+}

@@ -1,0 +1,19 @@
+#oscBack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  /* background-image: url('/public/oscilloscope.png'); */
+
+  margin-right: 0px;
+}
+
+#osc {
+  display: flex;
+  flex: 5 5 auto;
+  background-color: black;
+  position: relative;
+  left: -40px;
+  top: -5px;
+  margin: 0px;
+}

@@ -1,14 +1,17 @@
 import React from 'react'
+import {AudioAnalyzer, Footer, Header} from './components'
+import {Provider} from 'react-redux'
 
-import {Navbar} from './components'
-import Routes from './routes'
+import store from './store'
+import Home from './components/sound/home'
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Routes />
-    </div>
+    <Provider store={store}>
+      <Header />
+      <Home />
+      <Footer />
+    </Provider>
   )
 }
 

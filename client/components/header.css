@@ -1,0 +1,20 @@
+h1 {
+  text-align: center;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 250%;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  width: 20%;
+}
+
+.bars {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(48, 48, 48);
+  color: #d08fdd;
+  border-bottom: 0.5rem #d08fdd solid;
+  align-content: center;
+  align-items: center;
+}
