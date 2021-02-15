@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import * as THREE from 'three'
 import {Canvas, useFrame} from 'react-three-fiber'
 import Box from './box'
 

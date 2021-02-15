@@ -4,6 +4,7 @@ import GraphicEQ from './graphicEQ'
 import AudioAnimation from './AudioAnimation'
 import Spectrogram from './Spectrogram'
 import './AudioAnalyzer.css'
+import {connect} from 'react-redux'
 
 class AudioAnalyzer extends Component {
   constructor(props) {
@@ -105,4 +106,11 @@ class AudioAnalyzer extends Component {
   }
 }
 
-export default AudioAnalyzer
+const mapState = state => {
+  return {
+    audio: state.audio,
+    chartType: state.chartType
+  }
+}
+
+export default connect(mapState)(AudioAnalyzer)

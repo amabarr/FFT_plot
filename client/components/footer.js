@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.css'
 
 const Footer = () => (
-  <footer>
+  <footer className="entire-footer">
     <div className="footer-left">
       <a href="https://www.linkedin.com/in/amanda-barrafato/">
         Created By Amanda Barrafato

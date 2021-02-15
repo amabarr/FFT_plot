@@ -4,7 +4,6 @@
   flex: 1 5 auto;
   height: 100%;
   width: 100%;
-  align-items: space-around;
   align-content: center;
 }
 
@@ -25,11 +24,7 @@ button {
 
 .message {
   display: flex;
-  position: relative;
-  right: 50px;
-  width: 450px;
   height: 100px;
   text-align: center;
-  justify-content: center;
   align-items: center;
 }

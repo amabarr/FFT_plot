@@ -1,13 +1,17 @@
 import React from 'react'
-import {AudioChecker, Footer, Header} from './components'
+import {AudioAnalyzer, Footer, Header} from './components'
+import {Provider} from 'react-redux'
+
+import store from './store'
+import Home from './components/sound/home'
 
 const App = () => {
   return (
-    <>
+    <Provider store={store}>
       <Header />
-      <AudioChecker />
+      <Home />
       <Footer />
-    </>
+    </Provider>
   )
 }
 

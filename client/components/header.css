@@ -2,18 +2,19 @@ h1 {
   text-align: center;
   font-family: 'Homemade Apple', cursive;
   font-size: 250%;
-  margin: 0px;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  width: 20%;
 }
 
 .bars {
-  background-color: rgb(22, 22, 22);
-  height: 100%;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(48, 48, 48);
   color: #d08fdd;
   border-bottom: 0.5rem #d08fdd solid;
-}
-
-p {
-  text-align: center;
-  font-size: small;
+  align-content: center;
+  align-items: center;
 }

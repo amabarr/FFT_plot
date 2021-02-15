@@ -1,7 +1,8 @@
 body {
-  font-family: sans-serif;
-  background-color: black;
-  color: #d08fdd;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(24, 23, 23);
+  color: #d1dfe6;
 }
 
 a {
@@ -10,6 +11,13 @@ a {
 
 label {
   display: block;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 nav a {
