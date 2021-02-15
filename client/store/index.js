@@ -25,7 +25,7 @@ export const micChange = () => {
   }
 }
 
-const initialState = {audio: null, chartType: '', mic: false}
+const initialState = {audio: null, chartType: 'Oscilloscope', mic: false}
 
 export default function rootReducer(state = initialState, action) {
   switch (action.type) {

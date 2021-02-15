@@ -29,15 +29,6 @@ div {
   margin: 0;
   padding: 0;
 }
-#graphic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* background-image: url(/backgroundFFT.jpg); */
-  width: 1000px;
-  height: 525px;
-  margin: 0px;
-}
 
 #three {
   display: flex;

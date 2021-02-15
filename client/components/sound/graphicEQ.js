@@ -60,7 +60,7 @@ class GraphicEQ extends Component {
   render() {
     return (
       <div id="graphic">
-        <canvas width="945" height="445" ref={this.canvas} id="graphicChart" />
+        <canvas width="945" height="310" ref={this.canvas} id="graphicChart" />
       </div>
     )
   }
