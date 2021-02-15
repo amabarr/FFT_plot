@@ -1,6 +1,4 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
-import AudioAnalyzer from './AudioAnalyzer'
 import {connect} from 'react-redux'
 import './audio.css'
 import {setAudio, switchChart} from '../../store/index'

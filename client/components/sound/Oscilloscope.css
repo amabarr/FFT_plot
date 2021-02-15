@@ -2,18 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 75%;
-  /* background-image: url('/public/oscilloscope.png'); */
-
+  width: 100%;
+  height: 20%;
   margin-right: 0px;
 }
 
 #osc {
   display: flex;
   flex: 5 5 auto;
+  height: 75vh;
   background-color: black;
-  position: relative;
-  left: -40px;
-  top: -5px;
   margin: 0px;
+  width: 100%;
 }
