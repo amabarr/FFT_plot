@@ -12,7 +12,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
   background-color: rgb(48, 48, 48);
   color: #d08fdd;
   border-bottom: 0.5rem #d08fdd solid;

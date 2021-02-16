@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(24, 23, 23);
-  color: #d1dfe6;
+  color: white;
 }
 
 a {
@@ -30,16 +30,41 @@ div {
   padding: 0;
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 65%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.infoTable table,
+th,
+td {
+  background-color: rgb(65, 65, 65);
+  padding: 5px;
+  border: 1.5px solid #d08fdd;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
 #three {
   display: flex;
-  background-color: black;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
 }
 
 .animation {
   display: flex;
-  flex: 1 5;
-  height: 100%;
+  flex: 5 5 auto;
+  height: 75vh;
   width: 100%;
 }

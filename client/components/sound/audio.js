@@ -6,10 +6,6 @@ import {setAudio, switchChart} from '../../store/index'
 class AudioChecker extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      audio: null,
-      chartType: 'AudioAnimation'
-    }
     this.handleMicrophone = this.handleMicrophone.bind(this)
     this.handleChartChange = this.handleChartChange.bind(this)
   }
@@ -44,7 +40,11 @@ class AudioChecker extends Component {
   render() {
     return (
       <div className="controls">
-        <button type="button" onClick={this.handleMicrophone}>
+        <button
+          type="button"
+          onClick={this.handleMicrophone}
+          className={this.props.audio !== null ? 'stop' : 'play'}
+        >
           {this.props.audio !== null ? (
             <i className="fa fa-stop" />
           ) : (
@@ -56,17 +56,24 @@ class AudioChecker extends Component {
           type="button"
           value="Oscilloscope"
           onClick={this.handleChartChange}
+          className={this.props.chart === 'Oscilloscope' ? 'selected' : ''}
         >
           Oscilloscope
         </button>
 
-        <button type="button" onClick={this.handleChartChange} value="FFT Plot">
+        <button
+          type="button"
+          onClick={this.handleChartChange}
+          value="FFT Plot"
+          className={this.props.chart === 'FFT Plot' ? 'selected' : ''}
+        >
           FFT Plot
         </button>
         <button
           type="button"
           onClick={this.handleChartChange}
           value="AudioAnimation"
+          className={this.props.chart === 'AudioAnimation' ? 'selected' : ''}
         >
           Animation <small>*WARNING: FLASHING LIGHTS*</small>
         </button>
@@ -77,7 +84,8 @@ class AudioChecker extends Component {
 
 const mapState = state => {
   return {
-    audio: state.audio
+    audio: state.audio,
+    chart: state.chartType
   }
 }
 

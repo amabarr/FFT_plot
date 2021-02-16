@@ -12,8 +12,25 @@
 button {
   background-color: #d08fdd;
   border-radius: 10px;
+  padding: 5px;
   height: 3rem;
   width: 10rem;
+}
+
+small {
+  font-size: xx-small;
+}
+.selected {
+  background-color: rgb(138, 130, 190);
+  text-emphasis: bold;
+}
+
+.play {
+  background-color: mediumaquamarine;
+}
+
+.stop {
+  background-color: rgb(206, 86, 86);
 }
 
 .controls {
